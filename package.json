@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "ricardodiasportefolio",
-  "homepage": "https://rycardodias.github.io/",
+  "homepage": "https://rycardodias.github.io/myPortefolio",
   "version": "0.1.0",
   "scripts": {
     "build": "react-scripts build",

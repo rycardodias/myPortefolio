@@ -3,6 +3,13 @@ import "./ProjectLanguages.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 class ProjectLanguages extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      languages: []
+    };
+  }
+
   render() {
     return (
       <div>

@@ -12,12 +12,28 @@ import {
   publicationsHeader,
   publications,
 } from "../../portfolio.js";
-import ProjectsData from "../../shared/opensource/projects.json";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 
 class Projects extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      publicRepos: []
+    };
+
+  }
+  componentDidMount() {
+    fetch("https://api.github.com/users/rycardodias/repos")
+      .then(response => response.json())
+      .then(data => {
+        this.setState({ publicRepos: data });
+      })
+  }
+
   render() {
+    const repos = this.state.publicRepos
     const theme = this.props.theme;
     return (
       <div className="projects-main">
@@ -26,10 +42,6 @@ class Projects extends Component {
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">
               <div className="projects-heading-img-div">
-                {/* <img
-											src={require(`../../assests/images/${projectsHeader["avatar_image_path"]}`)}
-											alt=""
-										/> */}
                 <ProjectsImg theme={theme} />
               </div>
               <div className="projects-heading-text-div">
@@ -50,7 +62,7 @@ class Projects extends Component {
           </Fade>
         </div>
         <div className="repo-cards-div-main">
-          {ProjectsData.data.map((repo) => {
+          {repos.map((repo) => {
             return <GithubRepoCard repo={repo} theme={theme} />;
           })}
         </div>

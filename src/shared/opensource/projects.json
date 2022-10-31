@@ -21,6 +21,28 @@
                     "iconifyClass": "logos-javascript"
                 }
             ]
+        },
+        {
+            "id": "MDEwOlJlcG9zaXRvcnkyNjkwNzUwMjM=",
+            "name": "truvisory",
+            "createdAt": "2020-06-03T11:53:55Z",
+            "url": "https://github.com/ashutosh1919/truvisory",
+            "description": "This project is meant to provide resources to users who want to access good LinkedIn posts which contains resources to learn any Technology, Design, Self-Branding, Motivation etc. You can visit project by:",
+            "isFork": false,
+            "languages": [
+                {
+                    "name": "HTML",
+                    "iconifyClass": "logos-html-5"
+                },
+                {
+                    "name": "CSS",
+                    "iconifyClass": "logos-css-3"
+                },
+                {
+                    "name": "JavaScript",
+                    "iconifyClass": "logos-javascript"
+                }
+            ]
         }
     ]
 }

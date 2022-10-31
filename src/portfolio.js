@@ -394,7 +394,7 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "animated_ashutosh.png",
+    profile_image_path: "ricardo.png",
     description:
       "I am available on some social media. You can message me, I will reply within 12 hours. I can help you with Server configurations, ExpressJS, React, NextJS and all kind of database Development.",
   },
